@@ -1,0 +1,39 @@
+!! Projects
+
+!!!! Language & Virtual machine 
+
+""Sista""
+
+Sista is an adaptive optimiser for the Cog VM.
+
+""Cog""
+
+""Opal""
+
+""Mate""
+
+!!!! Video games
+
+""Wizard Battle Arena"" 
+
+Wizard Battle Arena is a real-time bomberman-like game, implemented with Pharo, Cairo & SDL2 (Heavy client). I developed it entirely myself using the open-source graphics from openGameArt and the Liberated Pixel Cup.
+
+*About>https://clementbera.wordpress.com/2016/08/29/sdl2-cairo-headless-for-realtime-native-applications/*
+*Demo>https://www.youtube.com/watch?v=srPdFgbyS6s*
+*Git page>https://github.com/clementbera/wizard-battle-arena*
+
+""Easnoth""
+
+Easnoth is a turn-based strategy game, implemented with Amber and deployed using exclusively Javascript (Light client). I developed it entirely myself using the open-source graphics from the Wesnoth video game.
+
+*About>https://clementbera.wordpress.com/2013/06/28/easnoth-an-official-amber-demo/*
+*Play>http://clementbera.github.io/amber/projects/easnoth/easnoth.html*
+*Play (debug version)>http://clementbera.github.io/amber/projects/easnoth/easnoth.html*
+*Git page>https://github.com/clementbera/amber*
+
+""???""
+
+??? is the first big video game I implemented. Unavailable to the crowd (At that time I was unaware that some graphics were protected by licences...), it is a turn-based strategy game, with a very, very high number of features compared to the other games I've implemented. I implemented the whole game myself and extracted graphics from the web (disregarding the licence). The game had a small community (dozens of players) for some months.
+
+ADD page
+

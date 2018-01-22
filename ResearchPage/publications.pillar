@@ -1,0 +1,37 @@
+!! Publications
+
+!!!! International conferences
+
+# Clément Béra, Eliot Miranda, Tim Felgentreff, Marcus Denker and Stéphane Ducasse. ''Sista: Saving Optimized Code in Snapshots for Fast Start-Up''. In International Conference on Managed Languages & Runtimes (ManLang, formerly PPPJ), ""ManLang’17"", 2017. *Link>https://hal.inria.fr/hal-01596321/* 
+# Eliot Miranda and Clément Béra. ''A Partial Read Barrier for Efficient Support of Live Object- oriented Programming''. In International Symposium on Memory Management, ""ISMM’15"", 2015. *Link>https://hal.archives-ouvertes.fr/hal-01152610/*
+
+!!!! International journals
+
+# Nevena Milojković, Clément Béra, Mohammad Ghafari and Oscar Nierstrasz. ''Mining Inline Cache Data to Order Inferred Types in Dynamic Languages''. In Journal of Science of Computer programming, ""SCP’18"", 2018. (To be published) *Link>http://scg.unibe.ch/archive/papers/Milo17e.pdf*
+# Clément Béra, Eliot Miranda, Marcus Denker and Stéphane Ducasse. ''Practical Validation of Bytecode to Bytecode JIT Compiler Dynamic Deoptimization''. Journal of Object Technology, ""JOT’16"", 2016. *Link>https://hal.inria.fr/hal-01299371*
+
+!!!! Books
+
+# Chapter 13 and 14 of ''Deep into Pharo''. *Link>http://files.pharo.org/books/deep-into-pharo/*
+# Book on Stack Management: This is the first book of the ''Building a virtual machine in 72 hours'' serie I am writing. These books includes lectures and exercises to learn how to build VMs. As of today, around 15 people contacted after reading the book and doing the exercises. *Link>https://clementbera.wordpress.com/2016/04/10/vm-learning-call-stack-management/*
+
+!!!! International Workshops
+
+# Sophie Kaleba, Clément Béra, Alexandre Bergel, and Stéphane Ducasse. ''Accurate VM profiler for the Cog VM''. In International Workshop on Smalltalk Technologies, ""IWST’17"", 2017. Best paper award (3 papers nominated out of 18). *Link>https://hal.archives-ouvertes.fr/hal-01585754*
+# Clément Béra. ''A low Overhead Per Object Write Barrier for the Cog VM''. In International Workshop on Smalltalk Technologies, ""IWST’16"", 2016. *Link>https://hal.archives-ouvertes.fr/hal-01356338*
+# Nevena Milojković, Clément Béra, Mohammad Ghafari and Oscar Nierstrasz. ''Inferring Types by Mining Class Usage Frequency from Inline Caches''. In International Workshop on Smalltalk Technologies, ""IWST’16"", 2016. *Link>https://hal.archives-ouvertes.fr/hal-01357071*
+# Clément Béra and Eliot Miranda. ''A bytecode set for adaptive optimizations''. In International Workshop on Smalltalk Technologies, ""IWST’14"", 2014. Best paper award (3 papers nominated out of 25). *Link>https://hal.inria.fr/hal-01088801*
+# Clément Béra and Marcus Denker. ''Towards a flexible Pharo Compiler''. In International Workshop on Smalltalk Technologies, ""IWST’13"", 2013. *Link>https://hal.inria.fr/hal-00862411*
+
+!!!! Ph.D thesis
+
+Thèse de doctorat. Clément Béra. Sista: a Metacircular Architecture for Runtime Optimisation Persistence. *Link>https://hal.inria.fr/tel-01634137/*
+
+!!!! Popularization
+
+# Clément Béra and Olivier Auverlot. Au coeur de la VM Pharo. In GNU/Linux Magazine, numéro 210, décembre 2017. (Full article not available for free) *Link>https://connect.ed-diamond.com/GNU-Linux-Magazine/GLMF-210/Au-caeur-de-la-VM-Pharo*
+# Clément Béra and Olivier Auverlot. Faites vos jeux en Pharo. In GNU/Linux Magazine, numéro 214, avril 2018. (Full article not available for free, to be published)
+
+!!!! Blog
+
+Clément Béra. Smalltalk, Tips’n Tricks. The blog discusses virtual machines for object-oriented languages in general. The number of views reached 25,000 November the 5th 2017. *Link>https://clementbera.wordpress.com/*

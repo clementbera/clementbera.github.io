@@ -1,0 +1,27 @@
+!! Home
+
+Hi! My name is Clément Béra. I am currently a Virtual Machine Architect for the Pharo consortium. 
+
+I am mainly interested in Virtual Machines in general, from garbage collection tricks to efficient 
+Just-in-Time compilers through fast interpreters and Foregin Function Interfaces.
+
+During my Ph.D, I implemented a Just-in-Time compiler performing speculative optimisations for the 
+Pharo Virtual Machine which is able to persist part of the optimized code across multiple start-ups. 
+I've also worked on lots of interesting things, such as a Memory Manager with an efficient GC an support
+for forwarding objects or validation techniques of Just-in-Time compiler optimizations using symbolic
+execution.
+
+*Publications>publications.pillar*
+
+*Talks>talks.pillar*
+
+*Professional Service>professionalService.pillar*
+
+*Teaching>teaching.pillar*
+
+*Work Experience>workExperience.pillar*
+
+Don't hesitate to also have a look at my *blog>https://clementbera.wordpress.com/*!
+
+""Contact""
+clement.bera(at)inria.fr
