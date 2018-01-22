@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>
+			
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<meta name="generator" content="Pharo - Pillar - Ecstatic" />
+		<meta name="robots" content="index,follow" />
+		<meta name="keywords" content="" />
+		
+		<link rel="stylesheet" type="text/css" media="screen, projection" href="theme/screen.css" />
+		<link rel="stylesheet" type="text/css" media="print" href="theme/print.css" />
+		<!--[if IE]><link rel="stylesheet" type="text/css" media="screen, projection" href="/wiki/files/PRBlueprintLibrary/ie.css"/><![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="theme/pure.css" />
+		<!--link rel="canonical" href="http://esug.org/wiki/pier/About/membership" /-->
+		
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	</head>
+	<body class="page viewcommand defaultview">
+		<div class="container">
+			<div class="header">
+				<div class="title">	
+					<div style="float:left; margin-right:15px">
+						<a href="index.html">
+							 <img alt="Dr. Clément Béra" src="me.jpg">
+						</a>
+					</div>
+					<div style="margin:15px">
+						<h1>Dr. Clément Béra</h1>
+					  	<h2></h2>
+					</div>
+				</div>
+				<div class="children">					
+					<ul>
+						
+						<li>
+							<a class="page" href="/index.html">Home</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/publications.html">Publications</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/talks.html">Talks</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/professionalService.html">Professional Service</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/projects.html">Projects</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/teaching.html">Teaching</a>
+						</li>
+						
+						<li>
+							<a class="page" href="/workExperience.html">Work Experience</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="submenue">
+					<ul>
+						
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="body">
+				<div class="contents">
+					<section>
+<h2> Game1</h2>
+
+<p>
+Game1 was the first full game I implemented and released (aside from games in Basic for Calculators), 
+before I discovered Object-oriented programming. Writting the game taught me a lot, for example I now always
+use explicit variable names (if one day you read a method you've written months ago with variables named
+a1,a2,a3,b1,b2,b3,k,l,m,n, etc., you now what I am talking about).
+</p>
+<p>
+Game1 is a turn-based RPG featuring around 30 missions. On the contrary to my other games which focus only 
+simple working game design, Game1 has a very complex design with multiple hardly working features. Just 
+looking at the element table below, which determines if the character's attack will be super effective or
+not very effective) gives you a hint of the complexity. The game features 9 core elements types (Fire, Thunder,
+Ice, Water, Earth, Wind, Nature, Light &amp; Darkness) with different interactions with each other. Darkness is special,
+it has a single weakness against light but is strong against no element since darkness creatures have natively 
+the vampirism ability.
+</p>
+<p>
+
+<figure>
+	<img src="game1/elem.PNG" width="35%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+At start-up, you pick a character. He can choose between 5 different jobs &amp; 5 different kind of magic. The 
+most defining trait is the magic chosen. Choosing Light or dark magic allows the character to be possessed by an angel
+or a demon, giving him greater powers. Choosing one of the invocation magic allows the character to summon elemental
+creatures. Lastly, choosing nature magic allows to summon nature elements and to turn the character into a treeman.
+</p>
+<p>
+The main screen, showed below allows the player to pick one of the next mission to go further in the game or one of the
+side-shop. Chapter 1,2,3,4 &amp; 6 are implemented fully, chapter 5 partially. Chapter 2 and 5 are optional (you can proceed
+the game if you skip them).
+</p>
+<p>
+
+<figure>
+	<img src="game1/main.PNG" width="38%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+When starting a mission (see below), some kind of pitch pops-up saying what you're up to. The pop-up often includes pictures of the 
+ennemies you're about to face.
+</p>
+<p>
+
+<figure>
+	<img src="game1/M1.PNG" width="25%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+The main mission window is composed of a 5x3 grid, with your character on the left on the ennemies on the right. The right panel allows 
+you to pick at each turn what spell or attack you want to perform (and there are a hundred different of each, that you may or may not
+be able to access based on your character skills).
+</p>
+<p>
+
+<figure>
+	<img src="game1/invok.PNG" width="52%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+The most <em>amazing</em> feature of this game is the large diversity of ennemies and their different behaviors. On one of the frst level, you
+face a little dark mage, which is able to summon zombies. Later, you face the demon Baldir, which is able to summon lille dark mages, which 
+themselves summon zombies. On the top of my head, ennemies include:
+</p><ul>
+<li> Cerbere, the 3 headed hell dog: this creature can play 3 times per turn since each head can play separatedly.</li>
+<li> Shaal'ud the demon: he can duplicate himself up to 6 times, splitting its HP as long as he has enough MP.</li>
+<li> Tomberry: each time you attack one, a pixie appears to defend him.</li>
+<li> Evil sisters: if one die in a turn but not the other, the remaining sister ressurects the first one.</li>
+<li> The Schizophrenia Wind Queen: she plays twice every turn, each of her personality plays the character, with a different behavior that may be opposite to the other personnality</li>
+<li> and many more...</li>
+</ul>
+
+<p>
+When the first chapter is finished, you can choose a pet to help you, allowing you to play an extra character. The following screen let you pick the pet:
+</p>
+<p>
+
+<figure>
+	<img src="game1/Pet.PNG" width="42%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+Remember as I said that the game design was very complicated ? Remember as I said the main window had multiple side-shops ? Well, one side-shop is an item shop, 
+where you can buy weapons, hats, armors and boots. The next one allows you to equip or unequip items. The last one is the Magic smith shop (See below), where you can smith 
+magic cristals into weapons or armor to increase their potential.
+</p>
+<p>
+
+<figure>
+	<img src="game1/mh.PNG" width="42%"/>
+	<figcaption></figcaption>
+</figure>
+</p>
+<p>
+That was quite a game :-) ! Unfortunately it has some bugs (especially after level 15), and there is so much code duplication that it's very difficult to 
+understand what is going on anywhere. So much emotion when I think about it though.
+</p></section>
+				</div>
+			</div>
+		</div>
+		<div class="footer container-fluid">
+			<div class="madeby">
+				Pure theme powered by <a class="external" href="http://www.pharo.org">pharo</a> | <a class="external" href="http://www.smalltalkhub.com/#!/~Pier/Pillar">pillar</a> | <a class="external" href="http://guillep.github.io/ecstatic/">Ecstatic</a>
+			</div>
+
+		<script>
+		$(document).ready(function() {
+		    $('dt').each(function() {
+		        var $dt = $(this),
+		        $selection = $dt.next('dd').andSelf();
+		        $selection.wrapAll('<div class="col-md-4">');
+		    });
+			$('dd').find('br').remove();
+			$('dt').contents().unwrap().wrap("<h3/>");
+			$('dd').contents().unwrap().wrap("<p/>");
+			$('dl').wrap("<div class='row multi-columns-row'/>");
+			$('dl').contents().unwrap();
+		});
+		function transformAnnotatedParagraphs(pClass) {
+		    $("p." + pClass).wrap("<div class='alert alert-" + pClass + "' role='alert'/>" );
+		};
+		transformAnnotatedParagraphs('success');
+		transformAnnotatedParagraphs('info');
+		transformAnnotatedParagraphs('warning');
+		transformAnnotatedParagraphs('danger');
+		</script>
+		<script type="text/javascript">
+				/* analytics */
+				/*<![CDATA[*/
+					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+				/*]]>*/
+			</script>
+			<script type="text/javascript">
+/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
+			pageTracker._initData();
+			pageTracker._trackPageview();/*]]>*/
+			</script>
+		</div>
+	</body>
+</html>
