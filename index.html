@@ -85,40 +85,28 @@
 Hi ! 
 </p>
 <p>
-My name is Clément Béra. 
+My name is Clément Béra. I am interested in runtime environments for object-oriented languages, from Memory management optimisations to efficient 
+Just-In-Time compilers through fast interpreters and Foreign Function Interfaces. I am currently working as a Virtual Machine Architect for the Pharo 
+consortium. Implementation-wise, my focus is therefore on <a href="https://pharo.org/">Pharo</a> and the Cog VM - one of those &quot;pure&quot; object language where 
+&quot;everything is an object&quot; (some define Pharo as a Smalltalk, I like to say it's a Smalltalk-like / ruby-like language).
 </p>
 <p>
-I am currently a Virtual Machine Architect for the Pharo consortium. 
+I am mainly known for the implementation of Sista, a Just-in-Time compiler architecture for the Pharo/Cog VM. Sista performs adaptive optimizations.
+The Sista VM starts the program non-optimized to collect runtime information about the program behavior and detect frequently used portions of code. It
+then generates optimized code, based on the collected runtime information. The optimizations are speculative, assuming that if the program has always 
+behaved a certain way, it will keep behaving that way. To ensure that the execution remains correct, Sista inserts deoptimization guards, which are able 
+to deoptimize the execution stack and resume execution with non optimized code if the behavior of the program changes. Sista may then re-optimize the code 
+differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist partially of the optimized code across multiple 
+start-ups. 
 </p>
 <p>
-I am interested in Virtual Machines in general, from garbage collection tricks to efficient 
-Just-in-Time compilers through fast interpreters and Foregin Function Interfaces. During my Ph.D, I implemented 
-a Just-in-Time compiler performing speculative optimisations for the 
-Pharo Virtual Machine which is able to persist part of the optimized code across multiple start-ups. 
-I've also worked on lots of interesting things, such as a Memory Manager with an efficient GC an support
-for forwarding objects or validation techniques of Just-in-Time compiler optimizations using symbolic
-execution.
+Aside from Sista, I've done a lot of work related to Memory Management (Efficient GC, support for forwarding objects), I've looked into symbolic execution
+to validate Just-In-Time compiler optimization &amp; deoptimization process and all sorts of interesting things like that. I'm also quite keen on video game 
+implementation - unfortunately, I've been able to work with 2D engines only, see the <a href="projects.html">projects</a> page.
 </p>
 <p>
-<a href="publications.html">Publications</a>
-</p>
-<p>
-<a href="talks.html">Talks</a>
-</p>
-<p>
-<a href="professionalService.html">Professional Service</a>
-</p>
-<p>
-<a href="projects.html">Projects</a>
-</p>
-<p>
-<a href="teaching.html">Teaching</a>
-</p>
-<p>
-<a href="workExperience.html">Work Experience</a>
-</p>
-<p>
-Don't hesitate to also have a look at my <a href="https://clementbera.wordpress.com/">blog</a>!
+Don't hesitate to have a look at my <a href="https://clementbera.wordpress.com/">blog</a>, where I talk about all sorts of things related to Language implementation &amp;
+Virtual Machine design, usually through the example of Pharo and the Cog VM.
 </p>
 <p>
 <strong>Contact</strong>
