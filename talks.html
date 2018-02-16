@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -83,17 +83,14 @@
 			<div class="body">
 				<div class="contents">
 					<section>
-<h2> Public talks</h2>
-
-<section>
-<h4> Most relevant talks</h4>
+<h3> Most relevant talks</h3>
 
 <ol><li> <em>Pharo Optimizing JIT internals</em>, ESUG’17, Maribor, Slovenia, September, 2017. <a href="https://www.youtube.com/watch?v=yDKaHphbFow">[Video]</a> <a href="https://fr.slideshare.net/esug/pharo-optimising-jit-internals">[Slides]</a></li>
 <li> <em>Sista: Speculative inlining, Smalltalk-style</em>, Stanford Colloquium on Computer Systems Seminar, Stanford, California, April, 2016. <a href="https://www.youtube.com/watch?v=f4Cvia-HZ-w">[Video]</a></li>
 </ol>
 
 </section><section>
-<h4> Other talks</h4>
+<h3> Other talks</h3>
 
 <ol><li> <em>Challenges of High-performance Language Virtual Machines</em>, 30 minutes de Sciences, Lille, France, February, 2018. <a href="https://fr.slideshare.net/ClmentBra/challenges-of-highperformance-language-virtual-machines">[Slides]</a></li>
 <li> <em>Sista: a Metacircular Architecture for Runtime Optimisations persistence</em>, Ph.D Defense, Lille, France, September, 2017. <a href="https://fr.slideshare.net/ClmentBra/phd-defense-clment-bra">[Slides]</a></li>
@@ -112,7 +109,7 @@
 <li> <em>Pharo: a malleable and powerful platform and The Cog VM roadmap</em>, Lam Research, Fremont, California, April, 2014.</li>
 <li> <em>Towards a flexible Pharo compiler</em>, IWST’13, Annecy, France, August, 2013. <a href="https://fr.slideshare.net/MarcusDenker/03-compiler-pharo">[Slides]</a></li>
 </ol>
-</section></section>
+</section>
 				</div>
 			</div>
 		</div>
@@ -123,6 +120,14 @@
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -142,18 +147,6 @@
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>

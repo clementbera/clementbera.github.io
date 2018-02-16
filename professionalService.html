@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -83,24 +83,21 @@
 			<div class="body">
 				<div class="contents">
 					<section>
-<h2> Professional Service</h2>
-
-<section>
-<h4> PC member: International conferences</h4>
+<h3> PC member: International conferences</h3>
 
 <ol><li> International Conference on Managed Languages &amp; Runtimes (formerly PPPJ), <strong>ManLang 2018</strong>.</li>
 <li> Dynamic Languages Symposium, <strong>DLS 2018</strong>.</li>
 </ol>
 
 </section><section>
-<h4> Reviewer: International journals</h4>
+<h3> Reviewer: International journals</h3>
 
 <ol><li> Journal of Universal Computer Science, <strong>J.UCS</strong> (2017 and onwards).</li>
 <li> Science of Computer Programming, <strong>SCP</strong> (2018 and onwards).</li>
 </ol>
 
 </section><section>
-<h4> PC member: International workshops</h4>
+<h3> PC member: International workshops</h3>
 
 <ol><li> International Workshop on Smalltalk Technologies, <strong>IWST 2018</strong>.</li>
 <li> International Seminar on Advanced Techniques &amp; Tools for Software Evolution, <strong>SATToSE 2018</strong>.</li>
@@ -112,20 +109,21 @@
 </ol>
 
 </section><section>
-<h4> Session chair </h4>
+<h3> Session chair </h3>
 
 <ol><li> Session chair of the <em>Virtual Machine</em> session of the IWST 2017 Workshop.</li>
 </ol>
 
 </section><section>
-<h4> Other</h4>
+<h3> Other</h3>
 
-<p>
-I have been Staff representative of non-permanent employees of the Lille Inria Lab from 2013 to 2016 (Représentant du personnel du Collège C).
-</p>
-<p>
-I have also performed numerous external reviews, I have stopped keeping track of all of them.
-</p></section></section>
+<ul>
+<li> Invited as keynote speaker to the conference Smalltalks 2015 in Buenos Aires organised by FAST (Fundación Argentina de Smalltalk).</li>
+<li> Google Summer of Code mentor for the Pharo consortium in 2017.</li>
+<li> Staff representative of non-permanent employees of the Lille Inria Lab from 2013 to 2016 (Représentant du personnel du Collège C).</li>
+<li> Numerous external reviews for conferences, journals &amp; workshops (I have stopped keeping track of all of them).</li>
+</ul>
+</section>
 				</div>
 			</div>
 		</div>
@@ -136,6 +134,14 @@ I have also performed numerous external reviews, I have stopped keeping track of
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -155,18 +161,6 @@ I have also performed numerous external reviews, I have stopped keeping track of
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>

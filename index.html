@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -82,10 +82,7 @@
 			</div>
 			<div class="body">
 				<div class="contents">
-					<section>
-<h2> Home</h2>
-
-<p>
+					<p>
 I am interested in runtime environments for object-oriented languages, from Memory management optimisations to efficient 
 Just-In-Time compilers through fast interpreters and Foreign Function Interfaces. I am currently working as a Virtual Machine Architect for the Pharo 
 consortium. Implementation-wise, my focus is therefore on <a href="https://pharo.org/">Pharo</a> and the Cog VM - one of those &quot;pure&quot; object language where 
@@ -112,7 +109,10 @@ Virtual Machine design, usually through the example of Pharo and the Cog VM.
 <p>
 <strong>Contact</strong>
 clement.bera(at)inria.fr
-</p></section>
+</p>
+<p>
+bera.clement(at)gmail.com
+</p>
 				</div>
 			</div>
 		</div>
@@ -123,6 +123,14 @@ clement.bera(at)inria.fr
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -142,18 +150,6 @@ clement.bera(at)inria.fr
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>

@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -82,15 +82,13 @@
 			</div>
 			<div class="body">
 				<div class="contents">
-					<section>
-<h2> Projects</h2>
+					<table style="border: solid thin"><tr><th style="text-align: center"> Language &amp; Virtual machine </th>
+</tr>
+</table>
 
-<section>
-<h4> Language &amp; Virtual machine </h4>
+<div style='width:50%; float:left; padding-right: 1%'><section>
+<h3> Cog (ongoing)</h3>
 
-<p>
-<strong>Cog (ongoing)</strong>
-</p>
 <p>
 Cog is the default Pharo virtual machine, featuring a cross-platform JIT compiler. 
 My main contributions here were different bug fixes and improvements in the JIT, 
@@ -101,34 +99,47 @@ read-only objects.
 <a href="http://www.mirandabanda.org/">Cog blog</a> ~
 <a href="https://github.com/OpenSmalltalk/opensmalltalk-vm">Git page</a>
 </p>
+</section><section>
+<h3> Opal (2012-2014)</h3>
+
 <p>
-<strong>Sista (ongoing)</strong>
+Opal is the Pharo sources to bytecode compiler. My main contribution was with Marcus Denker to productize it from the prototype.
 </p>
+<p>
+~
+</p>
+<p>
+</div>
+</p>
+<div style='width:50%; float:left; padding-left: 1%'>
+</section><section>
+<h3> Sista (ongoing)</h3>
+
 <p>
 Sista is an adaptive optimiser for the Cog VM. It speculates on the program behavior based on the first runs to recompile at runtime the code into optimized code. Performance gain is currently ranging from 1.5x to 10x. Sista is the main result of my Ph.D.
 </p>
 <p>
 <a href="https://clementbera.wordpress.com/2017/07/19/sista-open-alpha-release/">Last release</a>
 </p>
-<p>
-<strong>Opal (2012-2014)</strong>
-</p>
-<p>
-Opal is the Pharo sources to bytecode compiler. My main contribution was with Marcus Denker to productize it from the prototype.
-</p>
-<p>
-<strong>Mate (2012-2014)</strong>
-</p>
+</section><section>
+<h3> Mate (2012-2014)</h3>
+
 <p>
 Mate was a Memory simulator to experiment with Memory representation of objects. I did various contributions on top of it, such as the simulation of a garbage collector.
 </p>
-</section><section>
-<h4> Video games</h4>
-
 <p>
-<div style='width:50%; float:left; padding-right: 1%'>
-<strong>Spider Invasion (2017)</strong>
+~
 </p>
+<p>
+</div> 
+</p>
+<table style="border: solid thin"><tr><th style="text-align: center"> Video games</th>
+</tr>
+</table>
+
+<div style='width:50%; float:left; padding-right: 1%'></section><section>
+<h3> Spider Invasion (2017)</h3>
+
 <p>
 
 <figure>
@@ -142,12 +153,9 @@ Spider Invasion is a real-time Space Invaders-like game, implemented with Pharo,
 <p>
 <a href="https://github.com/clementbera/SpiderInvasion">Git page</a>
 </p>
-<p>
-~
-</p>
-<p>
-<strong>Easnoth (2013)</strong>
-</p>
+</section><section>
+<h3> Easnoth (2013)</h3>
+
 <p>
 
 <figure>
@@ -168,9 +176,9 @@ Easnoth is a turn-based strategy game, implemented with Amber and deployed using
 </div>
 </p>
 <div style='width:50%; float:left; padding-left: 1%'>
-<p>
-<strong>Wizard Battle Arena (2016)</strong> 
-</p>
+</section><section>
+<h3> Wizard Battle Arena (2016) </h3>
+
 <p>
 
 <figure>
@@ -186,12 +194,9 @@ Wizard Battle Arena is a real-time bomberman-like game, implemented with Pharo, 
 <a href="https://www.youtube.com/watch?v=srPdFgbyS6s">Demo</a> ~
 <a href="https://github.com/clementbera/wizard-battle-arena">Git page</a>
 </p>
-<p>
-~
-</p>
-<p>
-<strong>Game1 (2010)</strong>
-</p>
+</section><section>
+<h3> Game1 (2010)</h3>
+
 <p>
 
 <figure>
@@ -208,7 +213,7 @@ Game1 is the first big video game I implemented. Unavailable to the crowd (At th
 <p>
 </div> 
 </p>
-</section></section>
+</section>
 				</div>
 			</div>
 		</div>
@@ -219,6 +224,14 @@ Game1 is the first big video game I implemented. Unavailable to the crowd (At th
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -238,18 +251,6 @@ Game1 is the first big video game I implemented. Unavailable to the crowd (At th
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>

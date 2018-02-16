@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -83,10 +83,22 @@
 			<div class="body">
 				<div class="contents">
 					<section>
-<h2> Work Experience</h2>
+<h3> Post-Doc on Concurrent Virtual Machines </h3>
 
-<section>
-<h4> Virtual Machine Architect</h4>
+<p>
+<em>Dates:</em> April 2018 - April 2019
+</p>
+<p>
+<em>Location:</em> Brussels, Belgium
+</p>
+<p>
+<em>Organization:</em> Vrije Universiteit Brussel. The university is organised into 8 faculties that accomplish the three central missions of the university: education, research and service to the community.
+</p>
+<p>
+<em>Job:</em> Research on concurrent virtual machines &amp; virtual machine extensions for distributed applications
+</p>
+</section><section>
+<h3> Virtual Machine Architect</h3>
 
 <p>
 <em>Dates:</em> October 2017 - March 2018
@@ -101,7 +113,7 @@
 <em>Job:</em> Maintenance and evolution of Pharo and its virtual machine, Just-in-time compiler optimisations
 </p>
 </section><section>
-<h4> Ph.D student</h4>
+<h3> Ph.D student</h3>
 
 <p>
 <em>Dates:</em> October 2014 - September 2017
@@ -116,7 +128,7 @@
 <em>Job:</em> Multiple research tasks focusing on a runtime compiler architecture that saves adaptive optimizations across start-ups.
 </p>
 </section><section>
-<h4> Young Engineer</h4>
+<h3> Young Engineer</h3>
 
 <p>
 <em>Dates:</em> October 2012 - September 2014
@@ -130,58 +142,12 @@
 <p>
 <em>Job:</em> Improvement of Pharo: different tasks around the virtual machine (Memory management, JIT compiler, interpreter), contribution and release of IDE tools (Debugger, Inspectors), of a bytecode compiler and an AST interpreter.
 </p>
-</section><section>
-<h4> Intern: Software developer</h4>
-
-<p>
-<em>Dates:</em> March 2012 - September 2014
-</p>
-<p>
-<em>Location:</em> Tourcoing, France
-</p>
-<p>
-<em>Organization:</em> Sopra Steria. Sopra Steria is a leader in consulting, IT services and software development in Europe.
-</p>
-<p>
-<em>Job:</em> Different tasks including J2EE development, replies to tenders, writing of technical and functional specifications.
-</p>
-</section><section>
-<h4> Project Manager &amp; Software developer</h4>
-
-<p>
-<em>Dates:</em> October 2011 - March 2012
-</p>
-<p>
-<em>Location:</em> Douai, France
-</p>
-<p>
-<em>Organization:</em> Corrèze Montgolfière. Corrèze Montgolfiere is a SME that allow customer to enjoy short flights in ballons.
-</p>
-<p>
-<em>Job:</em> Development of an iPad application to schedule ballons’ pilots flights, synchronized with a booking website.
-</p>
-</section><section>
-<h4> Intern: Software developer (Proof of concept)</h4>
-
-<p>
-<em>Dates:</em> May 2011 - September 2011
-</p>
-<p>
-<em>Location:</em> London, United Kingdom
-</p>
-<p>
-<em>Organization:</em> Atos WorldLine. Atos Worldline is a leader in end-to-end services for critical electronic transactions.
-</p>
-<p>
-<em>Job:</em> The main Proof of concept was a NFC (near field communication) android application to update transport cards.
-</p>
 <p>
 ~
 </p>
 <p>
-For previous jobs, please look into the <a href="fullWorkExperience.html">Full Work experience</a> page.
-</p>
-</section></section>
+<a href="fullWorkExperience.html">Past experience</a>
+</p></section>
 				</div>
 			</div>
 		</div>
@@ -192,6 +158,14 @@ For previous jobs, please look into the <a href="fullWorkExperience.html">Full W
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -211,18 +185,6 @@ For previous jobs, please look into the <a href="fullWorkExperience.html">Full W
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>

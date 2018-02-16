@@ -40,35 +40,35 @@
 					<ul>
 						
 						<li>
-							<a class="page" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">Home</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/publications.html">Publications</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/talks.html">Talks</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/projects.html">Projects</a>
+							<a class="page bolderScript" href="/projects.html">Projects</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/teaching.html">Teaching</a>
+							<a class="page bolderScript" href="/teaching.html">Teaching</a>
 						</li>
 						
 						<li>
-							<a class="page" href="/workExperience.html">Experience</a>
+							<a class="page bolderScript" href="/workExperience.html">Experience</a>
 						</li>
 						
 						<li>
-							<a class="page" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
 						</li>
 						
 					</ul>
@@ -83,29 +83,25 @@
 			<div class="body">
 				<div class="contents">
 					<section>
-<h2> Teaching</h2>
-
-<section>
-<h4> University level</h4>
+<h3> University</h3>
 
 <ul>
-<li> Master &amp; Ph.D: Stanford seminar <em>Sista: Speculative inlining, Smalltalk-style</em>, 1 hour, University of Stanford.</li>
-<li> Master 2: Software maintenance &amp; evolution, 60 hours, lectures &amp; practical work (2 sessions), University of Lille.</li>
-<li> Bachelor 3: Object-oriented design, 84 hours, practical work (2 sessions), University of Lille.</li>
-<li> Bachelor 1: Algorithmic &amp; programming, 36 hours, practical work (1 session), University of Lille.</li>
-<li> Master 1: Show-case of big industrial IT project, 1 hour, Mines de Douai.</li>
+<li> Master &amp; Ph.D: Stanford seminar <em>Sista: Speculative inlining, Smalltalk-style</em>, University of Stanford.</li>
+<li> Master 2: Software maintenance &amp; evolution, 60 hours, lectures &amp; practical work (2 sessions), University of Lille 1.</li>
+<li> Bachelor 3: Object-oriented design, 84 hours, practical work (2 sessions), University of Lille 1.</li>
+<li> Bachelor 1: Algorithmic &amp; programming, 36 hours, practical work (1 session), University of Lille 1.</li>
+<li> Master 1: Show-case of big industrial IT project, Mines de Douai.</li>
 </ul>
 
 </section><section>
-<h4> Others</h4>
+<h3> Others</h3>
 
 <ul>
-<li> Teaching English to a class of in-mates over a year to get a diploma, secondary school level, 30 hours, jail of Douai, France.</li>
-<li> Maths and English private lessons to hospitalized kids, primary &amp; secondary school level, 20 hours, hospital of Douai, France.</li>
-<li> Teaching basic computer skills to retired teachers, 25 hours, Douai, France.</li>
-<li> Maths private lessons to High-school students (normal students and in-mates), 16 hours.</li>
+<li> English/Maths, Jail of Douai, class of in-mates &amp; private lessons, Secondary school level. </li>
+<li> Computer Basics, class of retired persons.</li>
+<li> Maths/English, private lessons to kids in hospital, Primary and Secondary school level.</li>
 </ul>
-</section></section>
+</section>
 				</div>
 			</div>
 		</div>
@@ -116,6 +112,14 @@
 
 		<script>
 		$(document).ready(function() {
+			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+			menuItems.forEach(function(element) {
+				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+					element.style.fontWeight = '900';
+					element.style.textDecoration = 'underline';
+				}
+			});
+			
 		    $('dt').each(function() {
 		        var $dt = $(this),
 		        $selection = $dt.next('dd').andSelf();
@@ -135,18 +139,6 @@
 		transformAnnotatedParagraphs('warning');
 		transformAnnotatedParagraphs('danger');
 		</script>
-		<script type="text/javascript">
-				/* analytics */
-				/*<![CDATA[*/
-					var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-				/*]]>*/
-			</script>
-			<script type="text/javascript">
-/*<![CDATA[*/var pageTracker = _gat._getTracker('UA-2892391-1');
-			pageTracker._initData();
-			pageTracker._trackPageview();/*]]>*/
-			</script>
 		</div>
 	</body>
 </html>
