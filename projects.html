@@ -218,7 +218,7 @@ Game1 is the first big video game I implemented. Unavailable to the crowd (At th
 
 		<script>
 		$(document).ready(function() {
-			if (document.baseURI.slice(-2) !== 'io') {
+			if (document.baseURI.slice(-4) !== '.io/') {
 				var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
 				menuItems.forEach(function(element) {
 					if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
