@@ -221,13 +221,15 @@ understand what is going on anywhere. So much emotion when I think about it thou
 
 		<script>
 		$(document).ready(function() {
-			var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
-			menuItems.forEach(function(element) {
-				if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
-					element.style.fontWeight = '900';
-					element.style.textDecoration = 'underline';
-				}
-			});
+			if (document.baseURI.slice(-2) !== 'io') {
+				var menuItems = [].slice.call(document.getElementsByClassName("bolderScript"));
+				menuItems.forEach(function(element) {
+					if (element.href.split('/').pop() == element.baseURI.split('/').pop()) {
+						element.style.fontWeight = '900';
+						element.style.textDecoration = 'underline';
+					}
+				})
+			};
 			
 		    $('dt').each(function() {
 		        var $dt = $(this),
