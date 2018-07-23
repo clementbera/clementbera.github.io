@@ -92,8 +92,7 @@ The Sista VM starts the program non-optimized to collect runtime information abo
 then generates optimized code, based on the collected runtime information. The optimizations are speculative, assuming that if the program has always 
 behaved a certain way, it will keep behaving that way. To ensure that the execution remains correct, Sista inserts deoptimization guards, which are able 
 to deoptimize the execution stack and resume execution with non optimized code if the behavior of the program changes. Sista may then re-optimize the code 
-differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist partially of the optimized code across multiple 
-start-ups. 
+differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist part of the optimized code across multiple start-ups. 
 </p>
 <p>
 Aside from Sista, I've done a lot of work related to Memory Management (Efficient GC, support for forwarding objects), I've looked into symbolic execution
