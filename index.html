@@ -84,10 +84,10 @@
 				<div class="contents">
 					<p>
 I am interested in runtime environments for object-oriented languages, from Memory management optimisations to efficient 
-Just-In-Time compilers through fast interpreters and Foreign Function Interfaces. I am currently working as a post-doc on concurrent virtual machines. My main focus is currently on a garbage collection compaction algorithm and debuggers for actor-based concurrent programs. Implementation-wise, I work with the <a href="http://www.mirandabanda.org/cogblog/about-cog/">Cog VM</a> and with Truffle <a href="https://github.com/smarr/SOMns">SOMns</a>.
+Just-In-Time compilers through fast interpreters and Foreign Function Interfaces. I am currently working as a post-doc on concurrent virtual machines. My main focus is currently both on reducing garbage collection compaction pauses and debuggers for actor-based concurrent applications. Implementation-wise, I work with <a href="http://www.mirandabanda.org/cogblog/about-cog/">Open-Smalltalk-VM</a> and with <a href="https://github.com/smarr/SOMns">Truffle-SOMns</a>.
 </p>
 <p>
-I am mainly known for the implementation of Sista, a Just-in-Time compiler architecture for the Pharo/Cog VM. Sista performs adaptive optimizations.
+One of my main past achievement was the implementation of Sista, a Just-in-Time compiler architecture for Open-Smalltalk-VM. Sista performs adaptive optimizations.
 The Sista VM starts the program non-optimized to collect runtime information about the program behavior and detect frequently used portions of code. It
 then generates optimized code, based on the collected runtime information. The optimizations are speculative, assuming that if the program has always 
 behaved a certain way, it will keep behaving that way. To ensure that the execution remains correct, Sista inserts deoptimization guards, which are able 
@@ -95,19 +95,21 @@ to deoptimize the execution stack and resume execution with non optimized code i
 differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist part of the optimized code across multiple start-ups. 
 </p>
 <p>
-Aside from Sista, I've done a lot of work related to Memory Management (Efficient GC, support for forwarding objects), I've looked into symbolic execution
-to validate Just-In-Time compiler optimization &amp; deoptimization process and all sorts of interesting things like that. I'm also quite keen on video game 
-implementation - unfortunately, I've been able to work with 2D engines only, see the <a href="projects.html">projects</a> page.
+Aside from Sista, 
+I've done a lot of work related to Memory Management (Efficient GC, support for forwarding objects), 
+recovering debugging information across threadsin concurrent application, 
+symbolic execution to validate Just-In-Time compiler optimization &amp; deoptimization process and 
+all sorts of interesting things like that. 
+I'm also quite keen on video game implementation - unfortunately, 
+I've been able to work with 2D engines only, 
+see the <a href="projects.html">projects</a> page.
 </p>
 <p>
 Don't hesitate to have a look at my <a href="https://clementbera.wordpress.com/">Blog</a>, where I talk about all sorts of things related to Language implementation &amp;
-Virtual Machine design, usually through the example of the Cog VM.
+Virtual Machine design, usually through the example of Open-Smalltalk-VM.
 </p>
 <p>
 <strong>Contact</strong>
-clement.bera(at)vub.ac.be
-</p>
-<p>
 bera.clement(at)gmail.com
 </p>
 				</div>
