@@ -28,11 +28,11 @@
 				<div class="title">	
 					<div style="float:left; margin-right:15px">
 						<a href="index.html">
-							 <img alt="Dr. Clément Béra" src="me.jpg">
+							 <img alt="Clément Béra: Google Software Engineer" src="me.jpg">
 						</a>
 					</div>
 					<div style="margin:15px">
-						<h1>Dr. Clément Béra</h1>
+						<h1>Clément Béra: Google Software Engineer</h1>
 					  	<h2></h2>
 					</div>
 				</div>
@@ -40,35 +40,23 @@
 					<ul>
 						
 						<li>
-							<a class="page bolderScript" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">[Home]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/workExperience.html">[Work Experience]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/projects.html">[Projects]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/publications.html">[Publications]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/projects.html">Projects</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="/teaching.html">Teaching</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="/workExperience.html">Experience</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="/professionalService.html">[Academic Service]</a>
 						</li>
 						
 					</ul>
@@ -86,31 +74,19 @@
 </tr>
 </table>
 
-<div style='width:50%; float:left; padding-right: 1%'><section>
-<h3> Cog [2013-Present]</h3>
+<div style='width:50%; float:left; padding-right: 1%'>
+<section>
+<h3> Android Compilers D8 and R8 [2019-Present]</h3>
 
 <p>
-Cog is the default Pharo virtual machine, featuring a cross-platform JIT compiler. 
-My main contributions here were different bug fixes and improvements in the JIT, 
-in the interpreter and in the Memory Manager. An example is the implementation of 
-read-only objects.
+D8 and R8 are the Android compilers present by default in Android Studio. D8 is an incremental compiler, mainly used at development time, while R8 is an application shrinker used to release applications. My main focus so far has been to add support for recent Java features, such as the Java 8 Stream and Time libraries.
 </p>
 <p>
-<a href="http://www.mirandabanda.org/">Cog blog</a> ~
-<a href="https://github.com/OpenSmalltalk/opensmalltalk-vm">Git page</a>
+<a href="https://r8.googlesource.com/r8">D8 and R8 repositories</a> ~
+<a href="https://developer.android.com/studio/preview/features#j8-desugar">Release of Java 8 libraries on Android</a>
 </p>
 </section><section>
-<h3> Opal [2012-2014]</h3>
-
-<p>
-Opal is the Pharo sources to bytecode compiler. My main contribution was with Marcus Denker to productize it from the prototype. Recently, I contributed again to the project when I changed the implementation of closures and when I implemented and productized a new bytecode set.
-</p>
-<p>
-</div>
-</p>
-<div style='width:50%; float:left; padding-left: 1%'>
-</section><section>
-<h3> Sista [2013-Present]</h3>
+<h3> Sista [2013-2018]</h3>
 
 <p>
 Sista is an adaptive optimiser for the Cog VM. It speculates on the program behavior based on the first runs to recompile at runtime the code into optimized code. Performance gain is currently ranging from 1.5x to 10x. Sista is the main result of my Ph.D.
@@ -123,6 +99,30 @@ Sista is an adaptive optimiser for the Cog VM. It speculates on the program beha
 
 <p>
 Mate &amp; Virtual CPU project goals were to increase virtual machine skills in the RMoD research team at Inria Lille. Mate was mainly in a Memory simulator to experiment with the memory representation of objects. My main contribution was the simulation of a garbage collector. Virtual CPU was an abstract assembly front-end, featuring multiple concrete back-ends (x86, ARMv5, x64) and a simulation back-end for debugging purposes.
+</p>
+<p>
+</div>
+</p>
+<div style='width:50%; float:left; padding-left: 1%'>
+</section><section>
+<h3> OpenSmalltalk-VM [2013-Present]</h3>
+
+<p>
+OpenSmalltalk-VM is the default virtual machine for Squeak, Cuis and Pharo.
+My main contributions here were different bug fixes and improvements in the JIT, 
+in the interpreter and in the Memory Manager. An example is the implementation of 
+read-only objects.
+</p>
+<p>
+<a href="https://clementbera.wordpress.com/">My Blog</a> ~
+<a href="http://www.mirandabanda.org/">Cog blog</a> ~
+<a href="https://github.com/OpenSmalltalk/opensmalltalk-vm">Git page</a>
+</p>
+</section><section>
+<h3> Opal [2012-2014]</h3>
+
+<p>
+Opal is the Pharo sources to bytecode compiler. My main contribution was with Marcus Denker to productize it from the prototype. Recently, I contributed again to the project when I changed the implementation of closures and when I implemented and productized a new bytecode set.
 </p>
 <p>
 <br/></div> 

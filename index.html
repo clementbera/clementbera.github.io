@@ -28,11 +28,11 @@
 				<div class="title">	
 					<div style="float:left; margin-right:15px">
 						<a href="index.html">
-							 <img alt="Dr. Clément Béra" src="me.jpg">
+							 <img alt="Clément Béra: Google Software Engineer" src="me.jpg">
 						</a>
 					</div>
 					<div style="margin:15px">
-						<h1>Dr. Clément Béra</h1>
+						<h1>Clément Béra: Google Software Engineer</h1>
 					  	<h2></h2>
 					</div>
 				</div>
@@ -40,35 +40,23 @@
 					<ul>
 						
 						<li>
-							<a class="page bolderScript" href="/index.html">Home</a>
+							<a class="page bolderScript" href="/index.html">[Home]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/publications.html">Publications</a>
+							<a class="page bolderScript" href="/workExperience.html">[Work Experience]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/talks.html">Talks</a>
+							<a class="page bolderScript" href="/projects.html">[Projects]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/professionalService.html">Responsibilities</a>
+							<a class="page bolderScript" href="/publications.html">[Publications]</a>
 						</li>
 						
 						<li>
-							<a class="page bolderScript" href="/projects.html">Projects</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="/teaching.html">Teaching</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="/workExperience.html">Experience</a>
-						</li>
-						
-						<li>
-							<a class="page bolderScript" href="https://clementbera.wordpress.com/">Blog</a>
+							<a class="page bolderScript" href="/professionalService.html">[Academic Service]</a>
 						</li>
 						
 					</ul>
@@ -83,32 +71,24 @@
 			<div class="body">
 				<div class="contents">
 					<p>
-I am interested in runtime environments for object-oriented languages, from Memory management optimisations to efficient compilers (JIT or AOT) through fast interpreters and Foreign Function Interfaces. I am currently working on the <a href="https://r8.googlesource.com/r8">Android Studio Compiler</a> at Google, adding Java 9+ features support for Android development.
+I am interested in runtime environments for object-oriented languages, from Memory management optimisations to efficient compilers (JIT or AOT) through fast interpreters and Foreign Function Interfaces. I am currently working on the <a href="https://r8.googlesource.com/r8">Android Studio Compiler</a> at Google, adding support for recent Java features in Android. My first significant achievement was the support for <a href="https://developer.android.com/studio/preview/features#j8-desugar">the Java Stream and Time libraries on all Android devices</a>.
 </p>
 <p>
-One of my main past achievement was the implementation of Sista, a Just-in-Time compiler architecture for Open-Smalltalk-VM. Sista performs adaptive optimizations.
-The Sista VM starts the program non-optimized to collect runtime information about the program behavior and detect frequently used portions of code. It
-then generates optimized code, based on the collected runtime information. The optimizations are speculative, assuming that if the program has always 
-behaved a certain way, it will keep behaving that way. To ensure that the execution remains correct, Sista inserts deoptimization guards, which are able 
-to deoptimize the execution stack and resume execution with non optimized code if the behavior of the program changes. Sista may then re-optimize the code 
-differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist part of the optimized code across multiple start-ups. 
-</p>
-<p>
-Aside from Sista, 
-I've done a lot of work related to Memory Management (Efficient GC, support for forwarding objects), 
-recovering debugging information across threads in concurrent applications, 
-symbolic execution to validate Just-In-Time compiler optimization &amp; deoptimization process and 
-all sorts of interesting things like that. 
-I'm also quite keen on video game implementation - unfortunately, 
-I've been able to work with 2D engines only, 
-see the <a href="projects.html">projects</a> page.
-</p>
-<p>
-Don't hesitate to have a look at my <a href="https://clementbera.wordpress.com/">Blog</a>, where I talk about all sorts of things related to Language implementation &amp;
-Virtual Machine design, usually through the example of Open-Smalltalk-VM.
-</p>
-<p>
-<strong>Contact</strong>
+work on OS VM. switch between engineering position + read-only obj, register alloc cogit, etc. and research position. OSVM convenient for exp through simulation.
+
+Before working at Google, my work was focused around the *OpenSmalltalk-VM&gt;https://github.com/OpenSmalltalk/opensmalltalk-vm* project. OpenSmalltalk-VM is a production Smalltalk and 
+Newspeak VM, and as such, I was able twice to work as an engineer on the project. My top engineering achievements include the introduction of read-only objects or a partial rewrite of the Just-in-Time compiler register allocator. OpenSmalltalk-VM is also a nice environment for experimentations, as besides the production pipeline, the VM can be entirely simulated through a mixed execution mode using a processor simulator and the production VM. Thanks to this facilities, I worked twice in research, first as a Ph.D student and then as a post-doc, using OpenSmalltalk-VM for experimentations. My research focused on three main axis:
+- &quot;&quot;Just-in-Time compilation:&quot;&quot; I implemented Sista, a speculative Just-in-Time compiler architecture for OpenSmalltalk-VM. The Sista VM starts the program non-optimized to collect runtime information about the program behavior and detect frequently used portions of code. It then generates optimized code, based on the collected runtime information. The optimizations are speculative, assuming that if the program has always behaved a certain way, it will keep behaving that way. To ensure that the execution remains correct, Sista inserts deoptimization guards, which are able to deoptimize the execution stack and resume execution with non optimized code if the behavior of the program changes. Sista may then re-optimize the code 
+differently based on the new behavior. Research-wise, the main interest of Sista is the ability to persist part of the optimized code across multiple start-ups and the reflexive design, where part of the Just-in-Time compiler is written in Smalltalk itself can be easily inspected and debugged at runtime.
+- &quot;&quot;Memory management:&quot;&quot; I worked a lot on various parts of the memory manager of OpenSmalltalk-VM, trying to speed-up the garbage collector or improving the interactions with the Just-in-Time compiler so it can generate better native code. Research-wise, the most interesting work is related to the introduction of forwarding objects and a partial read barrier to support them efficiently. Forwarding objects are used to support efficiently the migration of instances when an extra field is required for each object, the Smalltalk operation #become:, a low-pause garbage collector compactor and to guarantee that pinned objects are always in old space.
+- &quot;&quot;Virtual machine simulation:&quot;&quot; I worked on the virtual machine simulator. I focused mainly on documentation, with papers in collaboration with Dan Ingalls and Eliot Miranda to explain the simulator's internals. I was also involved in minor extensions regarding Slang, the DSL used to implement the VM, and the simulation infrastructure (Flags for garbage collection debugging, etc.).
+
+Besides programming languages, compilers and virtual machines, I'm also quite keen on video game implementation. Unfortunately, I've been able to work with 2D engines only, see the *projects&gt;projects.pillar* page.
+
+# Don't hesitate to have a look at my *Blog&gt;https://clementbera.wordpress.com/*, where I talk about all sorts of things related to Language implementation &amp;
+# Virtual Machine design, usually through the example of Open-Smalltalk-VM.
+
+&quot;&quot;Contact&quot;&quot;
 bera.clement(at)gmail.com
 </p>
 				</div>
